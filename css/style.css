@@ -3,3 +3,128 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+body .main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.btn-top{
+    border:1px solid aquamarine;
+    width: 143px;
+    height: 25px;
+    /* prova */
+    position: absolute;
+    display: flex;
+    right: 4px;
+    top: 6px;
+    gap: 6px;
+}
+
+.btn-top .btn-speaker{
+    background-color: beige;
+    width: 114px;
+    height: 25px;
+    /* prova */
+    border-radius: 5px;
+}
+
+.btn-top .btn-icon{
+    
+    background-color: beige;
+    width: 24px;
+    height: 25px;
+    /* prova */
+
+    border-radius: 5px;
+}
+
+body .main .container{
+    border: 2px solid beige;
+    width: 1816px;
+    height: 816px;
+    
+    /* prova */
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 22px;
+    position: relative;
+    top:75px;
+    left:90px;
+    right: 90px;
+    bottom: 50px;
+    gap: 15px 8px;
+
+
+}
+
+body .main .container .card{
+    border: 1px solid red;
+    width: 250px;
+    height: 150px;
+    /* prova */
+    position: relative;
+    display: flex;
+
+    
+}
+
+body .main .container>*{
+    width: calc(100% / 7);
+   
+}
+
+body .main .container .card .btn-card{
+    border: 1px solid green;
+    width: 100px;
+    height: 27px;
+    /* prova */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.nav{
+    border: 2px solid grey;
+    height: 82px;
+    /* prova */
+
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav .interaction{
+   background-color: white;
+    
+    width: 195px;
+    height: 82px;
+    /* prova */
+
+    display: flex;
+
+}
+
+.nav .icons{
+   background-color: white;
+    width: 690px;
+    height: 82px;
+    /* prova */
+
+    display: flex;
+}
+
+.nav .btn{
+    background-color:  white;
+    width: 115px;
+    height: 82px;
+    /* prova */
+}
