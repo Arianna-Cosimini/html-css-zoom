@@ -1,97 +1,153 @@
 *{
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 
-body .main{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
+body{
+    font-family: sans-serif;
+    -ms-overflow-style: none;
+    
 }
 
+body::-webkit-scrollbar {
+    width: 0; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+
+
+}
+
+.column-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+
+body .main{
+    height: calc(100vh - 160px);
+    background-color: black;
+    
+
+
+}
+.icon{
+    color: white;
+    font-size: 20px;
+}
 .btn-top{
-    border:1px solid aquamarine;
-    width: 143px;
-    height: 25px;
-    /* prova */
     position: absolute;
     display: flex;
-    right: 4px;
+    justify-content: center;
+    align-items: center;
+    right: 6px;
     top: 6px;
-    gap: 6px;
+    gap: 10px;
+    color: white;
+    
 }
+
 
 .btn-top .btn-speaker{
-    background-color: beige;
-    width: 114px;
-    height: 25px;
-    /* prova */
+    display: flex;
+    align-items: center;
     border-radius: 5px;
+    gap: 6px;
+
 }
 
-.btn-top .btn-icon{
-    
-    background-color: beige;
-    width: 24px;
-    height: 25px;
-    /* prova */
-
+.btn-nav{
     border-radius: 5px;
+    background-color: #4a4a4a;
+    padding: 5px;
 }
+
 
 body .main .container{
-    border: 2px solid beige;
-    width: 1816px;
-    height: 816px;
-    
-    /* prova */
-    display: flex;
-    flex-flow: column wrap;
-    margin-bottom: 22px;
-    position: relative;
-    top:75px;
-    left:90px;
-    right: 90px;
-    bottom: 50px;
-    gap: 15px 8px;
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  
 
 
 }
 
-body .main .container .card{
-    border: 1px solid red;
-    width: 250px;
-    height: 150px;
-    /* prova */
+.container{
+    overflow: auto;
+}
+
+
+
+.container::-webkit-scrollbar {
+    width: 12px; 
+}
+
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #222222; 
+    border-radius: 6px; 
+}
+
+.container::-webkit-scrollbar-track {
+    background-color:black;
+}
+
+body .main .container .column-container .card{
     position: relative;
     display: flex;
 
     
 }
 
-body .main .container>*{
-    width: calc(100% / 7);
+body .main .column-container>*{
+    padding-right: 5px;
+    padding-bottom:10px;
    
 }
 
-body .main .container .card .btn-card{
-    border: 1px solid green;
-    width: 100px;
-    height: 27px;
-    /* prova */
+body .main .container .column-container .card img{
+    max-width: 250px;
+}
+
+body .main .container .column-container .card .btn-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 10px;
+    padding: 5px;
+    
+    
+    background-color: #606c7959;
+    gap: 5px;
 }
 
 
-.nav{
-    border: 2px solid grey;
-    height: 82px;
-    /* prova */
+.card span{
+    font-size: 12px;
+}
+
+.card i{
+    font-size: 15px;
+}
+
+
+
+.footer{
+    background-color: #222222;
 
     display: flex;
     justify-content: space-between;
@@ -99,32 +155,62 @@ body .main .container .card .btn-card{
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 80px;
     z-index: 1;
 }
 
-.nav .interaction{
-   background-color: white;
+.footer .interaction{
+    margin-left: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    width: 195px;
-    height: 82px;
-    /* prova */
+
+
+}
+
+
+.span{
+    font-family: sans-serif;
+    font-size: 10px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .icons{
 
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-
-.nav .icons{
-   background-color: white;
-    width: 690px;
-    height: 82px;
-    /* prova */
-
+.icons i{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+} 
+
+
+.footer .icons i:nth-child(4) {
+    color: #4cca00;
 }
 
-.nav .btn{
-    background-color:  white;
-    width: 115px;
-    height: 82px;
-    /* prova */
+.footer .icons i:nth-child(4) span {
+    color: white;
 }
+.footer .btn{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #4a4a4a;
+    color: red;
+}
+
