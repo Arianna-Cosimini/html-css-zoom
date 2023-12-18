@@ -32,6 +32,11 @@ nav{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+
+    /* bonus */
+    align-content: flex-start; 
+    padding-bottom: calc(80px + 30px);
+    /* fine bonus */
     
 }
 
@@ -114,7 +119,7 @@ body .main .container .column-container .card{
 
 body .main .column-container>*{
     padding-right: 5px;
-    padding-bottom:10px;
+    padding-bottom:15px;
    
 }
 
@@ -127,7 +132,7 @@ body .main .container .column-container .card .btn-card{
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     padding: 5px;
     
     
